@@ -1,0 +1,14 @@
+name: piko-pulse
+services:
+  piko-pulse-db:
+    image: postgres:17
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: post
+      POSTGRES_DB: piko_pulse
+    ports: 
+      - "5432:5432"
+    volumes:
+      - piko-pulse-db:/var/lib/postgresql/data
+volumes:
+  piko-pulse-db:

@@ -169,6 +169,15 @@ cd frontend && npm test
 cd backend && npm run db:migrate
 ```
 
+## 開発ログ
+- 作業の区切りごとに `report/` フォルダにログを残す
+- ファイル名: `report_YYYYMMDD_XXX.md` (XXXは001からの連番、1日複数回の作業に対応)
+- 内容:
+  - **実行したこと**: Claudeがまとめる
+  - **詰まったところ**: Claudeがまとめる
+  - **学び**: ユーザー自身が記述する
+  - **次回着手すること**: Claudeがまとめる
+
 ## コーディング規約
 - 言語: TypeScript (strict mode)
 - フォーマッター/リンター: 導入時に決定 (ESLint + Prettier推奨)
